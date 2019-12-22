@@ -32,6 +32,15 @@ class Person
   end
 
 
+  def happy?
+    if self.happiness > 7
+      true
+    else
+      false
+    end
+  end
+
+
   def get_paid(amount)
     @bank_account += amount
     "all about the benjamins"
