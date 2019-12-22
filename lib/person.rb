@@ -11,13 +11,23 @@ class Person
     @hygiene = 8
   end
 
-  def happiness=(idx)
-    if idx < 0
+  def happiness=(happiness)
+    if happiness < 0
       @happiness = 0
-    elsif idx > 10
+    elsif happiness > 10
       @happiness = 10
     else
-      @happiness = idx
+      @happiness = happiness
+    end
+  end
+
+  def hygiene=(hygiene)
+    if hygiene>10
+      @hygiene=10
+    elsif hygiene<0
+      @hygiene=0
+    else
+      @hygiene=hygiene
     end
   end
 
